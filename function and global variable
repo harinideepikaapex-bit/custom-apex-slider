@@ -1,0 +1,86 @@
+//Add the below code in Page Function and Global Variable Declaration
+
+function slider_val_func() {
+
+    var slide_results;
+
+    slider_val = document.getElementById(“myRange”).value;   
+
+    //alert(slider_val);
+
+    if (slider_val == ‘1’) {
+
+  slide_results = “0”;
+
+} else if (slider_val == ‘2’) {
+
+  slide_results = “25”;
+
+}
+
+  else if (slider_val == ‘3’) {
+
+  slide_results = “50”;
+
+}
+
+  else if (slider_val == ‘4’) {
+
+  slide_results = “75”;
+
+}  
+
+ else if (slider_val == ‘5’) {
+
+  slide_results = “100”;
+
+}    
+
+    $x(“P131_SILDER_RANGE”).value = slide_results;
+
+    
+
+   // $x(“P131_SILDER_RANGE”).value = slider_val;
+
+}
+
+    function risk_analysis_load() {
+
+     var slider_val =   $x(“P131_SILDER_RANGE”).value ;
+
+     var slide_result;
+
+         if (slider_val == ‘0’) {
+
+  slide_result = “0”;
+
+} else if (slider_val == ’25’) {
+
+  slide_result = “2”;
+
+}
+
+  else if (slider_val == ’50’) {
+
+  slide_result = “3”;
+
+}
+
+  else if (slider_val == ’75’) {
+
+  slide_result = “4”;
+
+}  
+
+ else if (slider_val == ‘100’) {
+
+  slide_result = “5”;
+
+}        
+
+        
+
+  document.getElementById(“myRange”).value = slide_result;   
+
+}
+
