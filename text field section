@@ -1,0 +1,21 @@
+//Add the below code in Text Field “PRE TEXT” Section
+
+<div class=”range”>
+
+  <input type=”range” min=”1″ max=”5″ value=”2″ id=”myRange” class=”slider” onchange=”slider_val_func();”>
+
+  <div class=”sliderticks”>
+
+    <p>0</p>
+
+    <p>25</p>
+
+    <p>50</p>
+
+    <p>75</p>
+
+    <p>100</p>
+
+  </div>
+
+</div>
